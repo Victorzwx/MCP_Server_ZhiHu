@@ -74,3 +74,8 @@ python -m MCP_Server_ZhiHu.__login__
 ```
 poster = ZhuHuPoster(path, headless=True)##如果要调试，请设置为False
 ```
+# CSDN
+[本人CSDN账号](https://blog.csdn.net/qq_61302385?type=blog)
+
+# 微信
+![image](https://github.com/user-attachments/assets/f7a51982-917f-48b1-9d1f-9f90dc02143f)
