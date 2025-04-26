@@ -5,6 +5,7 @@
 
 ## 1. 环境配置前提
 - 方式1：
+  
 python版本要求 >= 3.10
 
 配置环境要求满足 requirements.txt 文件的要求
@@ -21,6 +22,7 @@ pip install -r requirements.txt
 npx @puppeteer/browsers install chromedriver@134.0.6998.166
 ```
 - 方式2：
+  
 运行setup_environment.py，如果该方式失败则有可能是ChromeDriver版本不正确，建议以方式1重新安装
 ```
 python setup_environment.py
