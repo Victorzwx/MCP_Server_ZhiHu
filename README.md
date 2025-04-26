@@ -4,7 +4,7 @@
 # 使用方法
 
 ## 1. 环境配置前提
-- 方式1：
+- **方式1：**
   
 python版本要求 >= 3.10
 
@@ -21,7 +21,7 @@ pip install -r requirements.txt
 ```
 npx @puppeteer/browsers install chromedriver@134.0.6998.166
 ```
-- 方式2：
+- **方式2：**
   
 运行setup_environment.py，如果该方式失败则有可能是ChromeDriver版本不正确，建议以方式1重新安装
 ```
