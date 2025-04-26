@@ -6,10 +6,10 @@
 ## 1. 环境配置前提
 - 方式1：
 配置环境要求满足 requirements.txt 文件的要求
-  1. selenium>=4.0.0
-  2. requests>=2.25.1
-  3. mcp>=0.1.0
-  4. webdriver-manager>=3.8.0
+  - selenium>=4.0.0
+  - requests>=2.25.1
+  - mcp>=0.1.0
+  - webdriver-manager>=3.8.0
 可以通过如下代码安装：
 ```
 pip install -r requirements.txt
