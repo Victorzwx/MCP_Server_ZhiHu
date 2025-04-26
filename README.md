@@ -69,7 +69,7 @@ python -m MCP_Server_ZhiHu.__login__
     }
 ```
 
-## 调试
+# 调试
 如果需要调试代码具体过程，或者可视化，需要关闭无头浏览器模式
 ```
 poster = ZhuHuPoster(path, headless=True)##如果要调试，请设置为False
