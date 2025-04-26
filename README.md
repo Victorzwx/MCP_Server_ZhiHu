@@ -70,10 +70,11 @@ python -m MCP_Server_ZhiHu.__login__
 ```
 
 # 调试
-如果需要调试代码具体过程，或者可视化，需要关闭无头浏览器模式
+如果需要调试大模型调用该MCP服务时的具体过程或者可视化浏览器的操作，需要关闭无头浏览器模式，如下：
 ```
 poster = ZhuHuPoster(path, headless=True)##如果要调试，请设置为False
 ```
+代码位于server.py中
 # CSDN
 [本人CSDN账号](https://blog.csdn.net/qq_61302385?type=blog)
 
