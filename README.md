@@ -1,2 +1,66 @@
-# MCP_Server_ZhiZhu
-知乎自动发帖MCP服务
+# MCP_Server_ZhiHu介绍
+知乎自动发文章MCP服务，使用者可以通过该服务与大模型自动生成文章并在知乎发文章。
+
+# 使用方法
+
+## 1. 环境配置前提
+- 方式1：
+配置环境要求满足 requirements.txt 文件的要求
+  1. selenium>=4.0.0
+  2. requests>=2.25.1
+  3. mcp>=0.1.0
+  4. webdriver-manager>=3.8.0
+可以通过如下代码安装：
+```
+pip install -r requirements.txt
+```
+然后安装ChromeDriver，本项目依赖于谷歌浏览器，134.0.6998.166是版本号，需要手动查询使用者电脑上的谷歌浏览器版本
+```
+npx @puppeteer/browsers install chromedriver@134.0.6998.166
+```
+- 方式2：
+运行setup_environment.py，如果该方式失败则有可能是ChromeDriver版本不正确，建议以方式1重新安装
+```
+python setup_environment.py
+```
+## 2. 克隆代码
+
+```
+git https://github.com/Victorzwx/MCP_Server_ZhiHu.git
+```
+## 运行初始化代码，保存个人cookie
+
+```
+python -m MCP_Server_ZhiHu.__login__
+```
+- 注意运行后会自动打开谷歌浏览器
+- 在谷歌浏览器输入使用者的手机账号，然后点击获取验证码
+- 然后，将得到的**验证码输入到Terminal**，即运行python -m MCP_Server_ZhiHu.__login__的终端，这很重要！
+
+## 3. 配置MCP服务
+通过python的方式运行
+```
+"xhs_mcp_server": {
+      "command": "python",
+      "args": [
+        "-m",
+        "MCP_Server_ZhiHu"
+      ]
+ }
+```
+然后就可以使用了
+
+如果是通过代码使用该MCP服务，如基于Spring AI的JAVA代码，还需要加上编码方式，以避免生成乱码：
+```
+"xhs_mcp_server": {
+      "command": "D:\\aconda\\python.exe",
+      "args": [
+        "-m",
+        "xhs_mcp_server",
+        "--encoding=utf-8"
+      ],
+      "env": {
+        "PYTHONIOENCODING": "utf-8"
+      }
+    }
+```
