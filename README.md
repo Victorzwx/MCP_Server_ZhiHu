@@ -32,7 +32,7 @@ python setup_environment.py
 ```
 git https://github.com/Victorzwx/MCP_Server_ZhiHu.git
 ```
-## 运行初始化代码，保存个人cookie
+## 在该代码文件夹下运行初始化代码，保存个人cookie
 
 ```
 python -m MCP_Server_ZhiHu.__login__
