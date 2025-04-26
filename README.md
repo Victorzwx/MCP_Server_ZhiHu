@@ -5,6 +5,7 @@
 
 ## 1. 环境配置前提
 - 方式1：
+python版本要求 >= 3.10
 配置环境要求满足 requirements.txt 文件的要求
   - selenium>=4.0.0
   - requests>=2.25.1
