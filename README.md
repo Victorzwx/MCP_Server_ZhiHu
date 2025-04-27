@@ -30,25 +30,25 @@ python setup_environment.py
 ## 2. 克隆代码
 
 ```
-git https://github.com/Victorzwx/MCP_Server_ZhiHu.git
+git https://github.com/Victorzwx/zh_mcp_server.git
 ```
 ## 在该代码文件夹下运行初始化代码，保存个人cookie
 
 ```
-python -m MCP_Server_ZhiHu.__login__
+python -m zh_mcp_server.__login__
 ```
 - 注意运行后会自动打开谷歌浏览器
 - 在谷歌浏览器输入使用者的手机账号，然后点击获取验证码
-- 然后，将得到的**验证码输入到Terminal**，即运行python -m MCP_Server_ZhiHu.__login__的终端，这很重要！
+- 然后，将得到的**验证码输入到Terminal**，即运行python -m zh_mcp_server.__login__的终端，这很重要！
 
 ## 3. 配置MCP服务
 通过python的方式运行
 ```
-"xhs_mcp_server": {
+"zh_mcp_server": {
       "command": "python",
       "args": [
         "-m",
-        "MCP_Server_ZhiHu"
+        "zh_mcp_server"
       ]
  }
 ```
@@ -56,11 +56,11 @@ python -m MCP_Server_ZhiHu.__login__
 
 如果是通过代码使用该MCP服务，如基于Spring AI的JAVA代码，还需要加上编码方式，以避免生成乱码：
 ```
-"xhs_mcp_server": {
+"zh_mcp_server": {
       "command": "D:\\aconda\\python.exe",
       "args": [
         "-m",
-        "xhs_mcp_server",
+        "zh_mcp_server",
         "--encoding=utf-8"
       ],
       "env": {
