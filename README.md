@@ -3,7 +3,13 @@
 
 # 使用方法
 
-## 1. 环境配置前提
+## 1. 克隆代码
+
+```
+git https://github.com/Victorzwx/zh_mcp_server.git
+```
+
+## 2. 环境配置前提
 
 建议在Windows环境下运行
   
@@ -30,12 +36,10 @@ npx @puppeteer/browsers install chromedriver@134.0.6998.166
 ```
 python setup_environment.py
 ```
-## 2. 克隆代码
 
-```
-git https://github.com/Victorzwx/zh_mcp_server.git
-```
-## 在该代码文件夹下运行初始化代码，保存个人cookie
+## 3.保存个人cookie
+
+在该代码文件夹下运行保存cookie的代码：
 
 ```
 python -m zh_mcp_server.__login__
@@ -44,7 +48,7 @@ python -m zh_mcp_server.__login__
 - 在谷歌浏览器输入使用者的手机账号，然后点击获取验证码
 - 然后，将得到的**验证码输入到Terminal**，即运行python -m zh_mcp_server.__login__的终端，这很重要！
 
-## 3. 配置MCP服务
+## 4. 在MCP客户端（如Cherry Studio）配置MCP服务
 通过python的方式运行
 ```
 "zh_mcp_server": {
